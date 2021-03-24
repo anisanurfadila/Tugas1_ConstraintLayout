@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
                 nama = emailEd.getText().toString();
                 password = passwordEd.getText().toString();
 
-                String email="anisanfd925@gmail.com";
-                String pass="abc123";
+                String email="acom";
+                String pass="123";
             if(nama.isEmpty()||password.isEmpty()){
                 Toast t = Toast.makeText(getApplicationContext(),"email password wajib diisi", Toast.LENGTH_LONG);
                 t.show();
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
                     Bundle b = new Bundle();
                     b.putString("a", nama.trim());
-                    b.putString("a", password.trim());
+                    b.putString("b", password.trim());
 
                     Intent i = new Intent(getApplicationContext(), ActivityHasil.class);
                     i.putExtras(b);
