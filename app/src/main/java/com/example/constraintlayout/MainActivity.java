@@ -2,6 +2,7 @@ package com.example.constraintlayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -30,29 +31,36 @@ public class MainActivity extends AppCompatActivity {
 
                 String email="anisanfd925@gmail.com";
                 String pass="abc123";
-
-                if(nama.equals(email) && password.equals(pass))
-                {
-                    Toast t = Toast.makeText(getApplicationContext(),"login sukses", Toast.LENGTH_LONG);
+            if(nama.isEmpty()||password.isEmpty()){
+                Toast t = Toast.makeText(getApplicationContext(),"email password wajib diisi", Toast.LENGTH_LONG);
+                t.show();
+            }
+            else {
+                if (nama.equals(email) && password.equals(pass)) {
+                    Toast t = Toast.makeText(getApplicationContext(), "login sukses", Toast.LENGTH_LONG);
                     t.show();
 
-                }
-                else if(nama.equals(email) && !password.equals(pass))
-                {
-                    Toast p = Toast.makeText(getApplicationContext(),"password salah", Toast.LENGTH_LONG);
+                    Bundle b = new Bundle();
+                    b.putString("a", nama.trim());
+                    b.putString("a", password.trim());
+
+                    Intent i = new Intent(getApplicationContext(), ActivityHasil.class);
+                    i.putExtras(b);
+
+                    startActivity(i);
+
+                } else if (nama.equals(email) && !password.equals(pass)) {
+                    Toast p = Toast.makeText(getApplicationContext(), "password salah", Toast.LENGTH_LONG);
                     p.show();
-                }
-                else if(!nama.equals(email) && password.equals(pass))
-                {
-                    Toast w = Toast.makeText(getApplicationContext(),"email salah", Toast.LENGTH_LONG);
+                } else if (!nama.equals(email) && password.equals(pass)) {
+                    Toast w = Toast.makeText(getApplicationContext(), "email salah", Toast.LENGTH_LONG);
                     w.show();
-                }
-                else
-                {
-                    Toast y = Toast.makeText(getApplicationContext(),"password & email salah", Toast.LENGTH_LONG);
+                } else {
+                    Toast y = Toast.makeText(getApplicationContext(), "password & email salah", Toast.LENGTH_LONG);
                     y.show();
 
                 }
+            }
             }
         });
     }
