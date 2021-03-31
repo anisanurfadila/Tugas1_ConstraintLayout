@@ -9,4 +9,12 @@
     <string name="label2">Login Berhasil</string>
     <string name="tLogin">LOGIN</string>
     <string name="var1">ini pesan</string>
+
+    <string name="mDaftar">Pendftaran</string>
+    <string name="ldaftar">daftar</string>
+    <string name="enama">Masukan Nama</string>
+    <string name="eemail">Masukan Email</string>
+    <string name="epassword">Masukan Password</string>
+    <string name="erepass">Masukan Password lagi</string>
+    <string name="ealamat">Masukan alamat</string>
 </resources>
