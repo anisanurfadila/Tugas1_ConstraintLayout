@@ -13,7 +13,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class Pendaftaran_activity extends AppCompatActivity {
 
-    EditText edtNama, edtAlamat, edtEmail, edtPassword, edtrepass;
+    EditText edtNama, edtAlamat, edtEmail, edtPassword, edtrepassword;
     FloatingActionButton fab;
 
     @Override
@@ -27,7 +27,7 @@ public class Pendaftaran_activity extends AppCompatActivity {
         edtAlamat = findViewById(R.id.edAlamat);
         edtEmail = findViewById(R.id.edEmail);
         edtPassword = findViewById(R.id.edPass);
-        edtrepass = findViewById(R.id.edrepass);
+        edtrepassword = findViewById(R.id.edRepass);
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,22 +36,26 @@ public class Pendaftaran_activity extends AppCompatActivity {
                         edtAlamat.getText().toString().isEmpty()||
                         edtEmail.getText().toString().isEmpty()||
                         edtPassword.getText().toString().isEmpty()||
-                        edtrepass.getText().toString().isEmpty()
+                        edtrepassword.getText().toString().isEmpty()
                 )
                 {
                     Snackbar.make(view, "wajib isi seluruh data !!!", Snackbar.LENGTH_LONG).show();
                 }
-                else {
-                    if(edtPassword.getText().toString().equals(edtrepass.getText().toString()))
-                    {
-                        Toast.makeText(getApplicationContext(), "pendaftarann berhasil...", Toast.LENGTH_LONG).show();
-
-                        Intent i = new Intent(getApplicationContext(),MainActivity.class);
-                        startActivity(i);
-                    }
-                    else
+                else
+                {
+                        if(edtPassword.getText().toString().equals(edtrepassword.getText().toString()))
                         {
-                            Snackbar.make(view, "password dan repassword harus sama !!!", Snackbar.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(),
+                                    "pendaftarann berhasil...", Toast.LENGTH_LONG).show();
+
+                            Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                            startActivity(i);
+                        }
+                        else
+                        {
+                            Snackbar.make(view,
+                                    "password dan repassword harus sama !!!",
+                                    Snackbar.LENGTH_LONG).show();
                         }
                 }
 

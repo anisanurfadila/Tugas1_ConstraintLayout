@@ -7,7 +7,7 @@
     tools:context=".Pendaftaran_activity">
 
     <EditText
-        android:id="@+id/EdEmail"
+        android:id="@+id/edEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -72,12 +72,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.248"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EdEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edEmail"
         android:hint="@string/epassword"
         app:layout_constraintVertical_bias="0.099" />
 
     <EditText
-        android:id="@+id/edrepass"
+        android:id="@+id/edRepass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -99,7 +99,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edrepass"
+        app:layout_constraintTop_toBottomOf="@+id/edRepass"
         app:srcCompat="@android:drawable/ic_menu_save"
         />
 
