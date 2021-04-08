@@ -25,43 +25,43 @@ public class ActivityLihatData extends AppCompatActivity {
         {
             case "inayah":
                 tvnama.setText("Inayah M");
-                tvnomor.setText("1");
+                tvnomor.setText("1238929");
                 break;
             case "ilham":
                 tvnama.setText("Ilham Mubarok");
-                tvnomor.setText("2");
+                tvnomor.setText("243739");
                 break;
             case "eris":
                 tvnama.setText("Erisna sutisna");
-                tvnomor.setText("3");
+                tvnomor.setText("32387923");
                 break;
             case "fikri":
                 tvnama.setText("fikri fadlu");
-                tvnomor.setText("4");
+                tvnomor.setText("4372732");
                 break;
             case "maul":
                 tvnama.setText("Maulana hidayah");
-                tvnomor.setText("5");
+                tvnomor.setText("5983239");
                 break;
             case "intan":
                 tvnama.setText("Intan perwari");
-                tvnomor.setText("6");
+                tvnomor.setText("623989832");
                 break;
             case "vina":
                 tvnama.setText("vina panduwinata");
-                tvnomor.setText("7");
+                tvnomor.setText("72399237");
                 break;
             case "gita":
                 tvnama.setText("gita gutawa");
-                tvnomor.setText("8");
+                tvnomor.setText("8237323");
                 break;
             case "vian":
                 tvnama.setText("Vian Munawaroh");
-                tvnomor.setText("9");
+                tvnomor.setText("9238723");
                 break;
             case "lutfi":
                 tvnama.setText("Lutfiatun");
-                tvnomor.setText("10");
+                tvnomor.setText("10329832");
                 break;
         }
 
