@@ -2,11 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="mnview"
+        android:id="@+id/mnview"
         android:title="@string/lihatdata"
         />
     <item
-        android:id="mnedit"
+        android:id="@+id/mnedit"
         android:title="@string/editdata"
         />
 
