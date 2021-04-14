@@ -20,10 +20,12 @@
 
 
     <string name="lihatdata">Lihat data</string>
-    <string name="editdata">edit data</string>
+    <string name="editdata">lihat nomor</string>
     <string name="datakontak">data kontak</string>
     <string name="namaitem"> nama item </string>
     <string name="detailkontak">detail kontak</string>
     <string name="nama">nama</string>
     <string name="notel">nomor telepon</string>
+
+    <string name="pencarian">nomor telepon</string>
 </resources>

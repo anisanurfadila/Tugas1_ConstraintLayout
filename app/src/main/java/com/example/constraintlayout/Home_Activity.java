@@ -64,6 +64,8 @@ public class Home_Activity extends AppCompatActivity implements PopupMenu.OnMenu
 
     @Override
     public boolean onMenuItemClick(MenuItem menuItem) {
+
+
         switch (menuItem.getItemId())
         {
             case R.id.mnview:
@@ -73,8 +75,28 @@ public class Home_Activity extends AppCompatActivity implements PopupMenu.OnMenu
                 break;
 
             case R.id.mnedit:
-                Toast.makeText(getApplicationContext(),"ini untuk edit kontak",Toast.LENGTH_LONG).show();
-                break;
+                String nama = bundle.getString("a");
+                if(nama.equals("inayah")){
+                    Toast.makeText(getApplicationContext(),"1238929",Toast.LENGTH_LONG).show();}
+                else if(nama.equals("ilham")){
+                    Toast.makeText(getApplicationContext(),"243739",Toast.LENGTH_LONG).show();}
+                else if(nama.equals("eris")){
+                    Toast.makeText(getApplicationContext(),"32387923",Toast.LENGTH_LONG).show();}
+                else if(nama.equals("fikri")){
+                    Toast.makeText(getApplicationContext(),"4372732",Toast.LENGTH_LONG).show();}
+                else if(nama.equals("maul")){
+                    Toast.makeText(getApplicationContext(),"5983239",Toast.LENGTH_LONG).show();}
+                else if(nama.equals("intan")){
+                    Toast.makeText(getApplicationContext(),"623989832",Toast.LENGTH_LONG).show();}
+                else if(nama.equals("vina")){
+                    Toast.makeText(getApplicationContext(),"72399237",Toast.LENGTH_LONG).show();}
+                else if(nama.equals("gita")){
+                    Toast.makeText(getApplicationContext(),"8237323",Toast.LENGTH_LONG).show();}
+                else if(nama.equals("vian")){
+                    Toast.makeText(getApplicationContext(),"9238723",Toast.LENGTH_LONG).show();}
+                else if(nama.equals("lutfi")){
+                    Toast.makeText(getApplicationContext(),"10329832",Toast.LENGTH_LONG).show();}
+
         }
 
         return false;
