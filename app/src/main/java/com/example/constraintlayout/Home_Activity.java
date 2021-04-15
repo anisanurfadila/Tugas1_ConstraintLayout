@@ -50,21 +50,6 @@ public class Home_Activity extends AppCompatActivity implements PopupMenu.OnMenu
             classNamaArrayList.add(classNama);
         }
 
-        adap = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1);
-
-        cari.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                adap.getFilter().filter(newText);
-                return false;
-            }
-        });
-
        adapter = new ListViewAdapter(this,android.R.layout.simple_list_item_1);
         list.setAdapter(adapter);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
