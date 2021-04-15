@@ -10,5 +10,6 @@
     <color name="grey">#DFDFDF</color>
 
 
+    <color name="bgregister">#F1EAF0</color>
     <color name="devider">#694fea</color>
 </resources>

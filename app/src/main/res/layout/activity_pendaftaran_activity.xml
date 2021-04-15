@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="0dp"
-    tools:context=".Pendaftaran_activity">
+    tools:context=".Pendaftaran_activity"
+    android:background="@color/bgregister">
 
 
     <TextView
@@ -20,7 +21,8 @@
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:fontFamily="casual"/>
 
     <Button
         android:id="@+id/Batal"
@@ -62,7 +64,8 @@
             android:hint="@string/cnama"
             android:layout_width="353dp"
             android:layout_height="52dp"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="20dp"
+            android:fontFamily="casual"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -79,7 +82,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtAlamat"
-
+            android:fontFamily="casual"
             android:layout_width="353dp"
             android:layout_height="52dp"
             android:layout_marginLeft="20dp"
@@ -100,7 +103,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtEmail"
-
+            android:fontFamily="casual"
             android:layout_width="353dp"
             android:layout_height="52dp"
             android:layout_marginLeft="20dp"
@@ -127,7 +130,8 @@
             android:layout_height="52dp"
             android:layout_marginLeft="20dp"
             android:hint="@string/tPassword"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:fontFamily="casual"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -149,7 +153,8 @@
             android:layout_height="52dp"
             android:layout_marginLeft="20dp"
             android:hint="@string/erepass"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:fontFamily="casual"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <RadioGroup
@@ -162,7 +167,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.322">
+        app:layout_constraintVertical_bias="0.322"
+        >
 
         <RadioButton
             android:id="@+id/radioButton2"
@@ -171,7 +177,8 @@
             android:layout_weight="1"
             android:text="@string/ccewek"
             tools:layout_editor_absoluteX="207dp"
-            tools:layout_editor_absoluteY="301dp" />
+            tools:layout_editor_absoluteY="301dp"
+            android:fontFamily="casual"/>
 
         <RadioButton
             android:id="@+id/radioButton"
@@ -180,7 +187,8 @@
             android:layout_weight="1"
             android:text="@string/claki"
             tools:layout_editor_absoluteX="62dp"
-            tools:layout_editor_absoluteY="301dp" />
+            tools:layout_editor_absoluteY="301dp"
+            android:fontFamily="casual"/>
 
     </RadioGroup>
 
@@ -194,7 +202,8 @@
         app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.319" />
+        app:layout_constraintVertical_bias="0.319"
+        android:fontFamily="casual"/>
 
     <RadioGroup
         android:id="@+id/radioGroup2"
@@ -217,15 +226,18 @@
                 android:id="@+id/radioButton3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/cislam" />
+                android:text="@string/cislam"
+                android:fontFamily="casual"/>
 
             <RadioButton
+                android:fontFamily="casual"
                 android:id="@+id/radioButton4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ckristen" />
 
             <RadioButton
+                android:fontFamily="casual"
                 android:id="@+id/radioButton5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -238,12 +250,14 @@
             android:orientation="horizontal">
 
             <RadioButton
+                android:fontFamily="casual"
                 android:id="@+id/radioButton6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/cbudha" />
 
             <RadioButton
+                android:fontFamily="casual"
                 android:id="@+id/radioButton7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -256,12 +270,14 @@
             android:orientation="horizontal">
 
             <RadioButton
+                android:fontFamily="casual"
                 android:id="@+id/radioButton8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/cprotestan" />
 
             <RadioButton
+                android:fontFamily="casual"
                 android:id="@+id/radioButton9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
