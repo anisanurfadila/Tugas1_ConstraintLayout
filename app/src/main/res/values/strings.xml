@@ -8,10 +8,10 @@
     <string name="txpassword">Ini Hasil Password</string>
     <string name="label2">Login Berhasil</string>
     <string name="tLogin">LOGIN</string>
-    <string name="var1">ini pesan</string>
+    <string name="var1">Ini pesan</string>
 
     <string name="mDaftar">Belum Punya Akun ?</string>
-    <string name="ldaftar">daftar</string>
+    <string name="ldaftar">Daftar</string>
     <string name="enama">Masukan Nama</string>
     <string name="eemail">Masukan Email</string>
     <string name="epassword">Masukan Password</string>
@@ -19,13 +19,13 @@
     <string name="ealamat">Masukan alamat</string>
 
 
-    <string name="lihatdata">Lihat data</string>
-    <string name="editdata">lihat nomor</string>
-    <string name="datakontak">data kontak</string>
-    <string name="namaitem"> nama item </string>
-    <string name="detailkontak">detail kontak</string>
-    <string name="nama">nama</string>
-    <string name="notel">nomor telepon</string>
+    <string name="lihatdata">Lihat Data</string>
+    <string name="editdata">Lihat Nomor</string>
+    <string name="datakontak">Data Kontak</string>
+    <string name="namaitem"> Nama Item </string>
+    <string name="detailkontak">Detail Kontak</string>
+    <string name="nama">Nama</string>
+    <string name="notel">Nomor telepon</string>
 
     <string name="pencarian">Masukan kata pencarian</string>
 
