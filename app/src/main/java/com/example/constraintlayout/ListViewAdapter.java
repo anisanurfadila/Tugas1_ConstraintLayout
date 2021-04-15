@@ -8,6 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 public class ListViewAdapter extends BaseAdapter {
@@ -15,8 +16,9 @@ public class ListViewAdapter extends BaseAdapter {
     Context mContext;
     LayoutInflater inflater;
     private ArrayList<ClassNama> arrayList;
+    private List<ClassNama> appList;
 
-    public ListViewAdapter(Context context, int simple_list_item_1)
+    public ListViewAdapter(Context context)
     {
         mContext = context;
         inflater = LayoutInflater.from(mContext);
@@ -65,7 +67,21 @@ public class ListViewAdapter extends BaseAdapter {
         return view;
     }
 
-
+    public void SearchNama(String query) {
+        Home_Activity.classNamaArrayList.clear();
+        if (query.isEmpty()) {
+            Home_Activity.classNamaArrayList.addAll(arrayList);
+        }
+        else {
+            query = query.toLowerCase();
+            for (ClassNama SearchData : arrayList) {
+                if (SearchData.getName().toLowerCase().contains(query)) {
+                    Home_Activity.classNamaArrayList.add(SearchData);
+                }
+            }
+        }
+        notifyDataSetChanged();
+    }
 
 
 }

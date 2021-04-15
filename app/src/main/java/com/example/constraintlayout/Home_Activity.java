@@ -5,6 +5,7 @@ import androidx.core.view.MenuItemCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -24,7 +25,6 @@ public class Home_Activity extends AppCompatActivity implements PopupMenu.OnMenu
     SearchView cari;
     private ListView list;
     private ListViewAdapter adapter;
-    ArrayAdapter<String> adap;
 
     String[] listNama;
 
@@ -50,8 +50,25 @@ public class Home_Activity extends AppCompatActivity implements PopupMenu.OnMenu
             classNamaArrayList.add(classNama);
         }
 
-       adapter = new ListViewAdapter(this,android.R.layout.simple_list_item_1);
+
+
+       adapter = new ListViewAdapter(this);
         list.setAdapter(adapter);
+
+        cari.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                adapter.SearchNama(s);
+
+                return false;
+            }
+        });
+
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -65,6 +82,9 @@ public class Home_Activity extends AppCompatActivity implements PopupMenu.OnMenu
                 pm.show();
             }
         });
+
+
+
     }
 
     @Override
