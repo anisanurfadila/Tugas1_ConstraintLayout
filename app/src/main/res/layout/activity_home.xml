@@ -9,9 +9,12 @@
 
     <SearchView
         android:id="@+id/pencarian"
-        android:autofillHints="@string/pencarian"
+        android:queryHint="@string/pencarian"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+
         />
 
     <TextView
@@ -21,7 +24,8 @@
         android:text="@string/datakontak"
         android:layout_gravity="center_horizontal"
         android:textSize="14pt"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        />
 
     <ListView
         android:id="@+id/listKontak"

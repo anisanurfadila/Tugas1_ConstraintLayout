@@ -1,22 +1,30 @@
 package com.example.constraintlayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.MenuItemCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.PopupMenu;
+import android.widget.SearchView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class Home_Activity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
 
+    SearchView cari;
     private ListView list;
     private ListViewAdapter adapter;
+    ArrayAdapter<String> adap;
 
     String[] listNama;
 
@@ -25,13 +33,12 @@ public class Home_Activity extends AppCompatActivity implements PopupMenu.OnMenu
 
     Intent intent;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        cari = findViewById(R.id.pencarian);
         listNama = new String[]{"inayah", "ilham", "eris","fikri","maul","intan",
                 "vina","gita","vian","lutfi"};
 
@@ -43,10 +50,23 @@ public class Home_Activity extends AppCompatActivity implements PopupMenu.OnMenu
             classNamaArrayList.add(classNama);
         }
 
-        adapter = new ListViewAdapter(this);
+        adap = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1);
 
+        cari.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                adap.getFilter().filter(newText);
+                return false;
+            }
+        });
+
+       adapter = new ListViewAdapter(this,android.R.layout.simple_list_item_1);
         list.setAdapter(adapter);
-
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -64,7 +84,6 @@ public class Home_Activity extends AppCompatActivity implements PopupMenu.OnMenu
 
     @Override
     public boolean onMenuItemClick(MenuItem menuItem) {
-
 
         switch (menuItem.getItemId())
         {

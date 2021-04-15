@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Praktek Constraint Layout</string>
-    <string name="tEmail">Email :</string>
-    <string name="tPassword">Password :</string>
+    <string name="tEmail">Masukan Email :</string>
+    <string name="tPassword">Masukan Password :</string>
     <string name="bsignin">Sign In</string>
     <string name="tData">Data Anisa</string>
     <string name="txemail">Ini Hasil Email</string>
@@ -10,7 +10,7 @@
     <string name="tLogin">LOGIN</string>
     <string name="var1">ini pesan</string>
 
-    <string name="mDaftar">Pendftaran</string>
+    <string name="mDaftar">Belum Punya Akun ?</string>
     <string name="ldaftar">daftar</string>
     <string name="enama">Masukan Nama</string>
     <string name="eemail">Masukan Email</string>
@@ -27,5 +27,21 @@
     <string name="nama">nama</string>
     <string name="notel">nomor telepon</string>
 
-    <string name="pencarian">nomor telepon</string>
+    <string name="pencarian">Masukan kata pencarian</string>
+
+    <string name="belumdaftar">Belum Terdaftar?</string>
+    <string name="judulpendaftaran">Pendaftaran</string>
+    <string name="cnama">Masukan Nama</string>
+    <string name="calamat">Masukan Alamat</string>
+    <string name="cjkel">Jenis Kelamin</string>
+    <string name="claki">Laki-Laki</string>
+    <string name="cperempuan">Perempuan</string>
+    <string name="cagama">Agama</string>
+    <string name="cemail">Masukan Email</string>
+    <string name="cpassword">Masukan Password</string>
+    <string name="crepass">Masukan Kembali Password</string>
+
+    <string name="cbatal">Batal</string>
+    <string name="cdaftar">Daftar</string>
+
 </resources>

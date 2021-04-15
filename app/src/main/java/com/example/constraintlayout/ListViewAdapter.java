@@ -8,6 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class ListViewAdapter extends BaseAdapter {
 
@@ -15,13 +16,15 @@ public class ListViewAdapter extends BaseAdapter {
     LayoutInflater inflater;
     private ArrayList<ClassNama> arrayList;
 
-    public ListViewAdapter(Context context)
+    public ListViewAdapter(Context context, int simple_list_item_1)
     {
         mContext = context;
         inflater = LayoutInflater.from(mContext);
         this.arrayList = new ArrayList<ClassNama>();
         this.arrayList.addAll(Home_Activity.classNamaArrayList);
     }
+
+
 
     public class ViewHolder{
         TextView name;
