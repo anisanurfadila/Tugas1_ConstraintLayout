@@ -17,22 +17,22 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class MainActivity extends AppCompatActivity {
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        getMenuInflater().inflate(R.menu.menu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if(item.getItemId()== R.id.mnDaftar)
-        {
-            Intent i = new Intent(getApplicationContext(), Pendaftaran_activity.class);
-            startActivity(i);
-        }
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//
+//        getMenuInflater().inflate(R.menu.menu, menu);
+//        return super.onCreateOptionsMenu(menu);
+//    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+//        if(item.getItemId()== R.id.mnDaftar)
+//        {
+//            Intent i = new Intent(getApplicationContext(), Pendaftaran_activity.class);
+//            startActivity(i);
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
 
     Button btnLogin;
     EditText emailEd, passwordEd;

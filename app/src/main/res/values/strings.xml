@@ -47,4 +47,8 @@
     <string name="cbatal">Batal</string>
     <string name="cdaftar">Daftar</string>
 
+    <string name="login">Welcome !</string>
+    <string name="register">Register</string>
+    <string name="home">Home</string>
+    <string name="kontak">Contact</string>
 </resources>

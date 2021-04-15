@@ -10,21 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ConstraintLayout">
         <activity android:name=".ActivityLihatData"
-
+android:label="@string/kontak"
             android:parentActivityName=".Home_Activity"></activity>
 
         <activity android:name=".Home_Activity"
+            android:label="@string/home"
             android:parentActivityName=".MainActivity"/>
 
         <activity
             android:name=".Pendaftaran_activity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:label="@string/register"/>
         <activity
             android:name=".ActivityHasil"
             android:label="@string/label2"
             android:parentActivityName=".MainActivity" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:label="@string/login"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

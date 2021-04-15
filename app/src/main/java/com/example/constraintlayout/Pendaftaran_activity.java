@@ -60,11 +60,11 @@ public class Pendaftaran_activity extends AppCompatActivity {
                         txrepass.getText().toString().isEmpty()
                 )
                 {
-                    lynama.setError("Nama tidak kosong ");
-                    lyalamat.setError("Alamat tidak kosong ");
-                    lyemail.setError("Email tidak kosong ");
-                    lypass.setError("Password tidak kosong ");
-                    lyrepass.setError("Re-password tidak kosong ");
+                    lynama.setError("Nama tidak boleh kosong ");
+                    lyalamat.setError("Alamat tidak boleh kosong ");
+                    lyemail.setError("Email tidak boleh kosong ");
+                    lypass.setError("Password tidak boleh kosong ");
+                    lyrepass.setError("Re-password tidak boleh kosong ");
 
                     Snackbar.make(view, "Data harus diisi semua !!!", Snackbar.LENGTH_LONG).show();
                 }
