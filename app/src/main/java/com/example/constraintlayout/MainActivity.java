@@ -61,8 +61,8 @@ public class MainActivity extends AppCompatActivity {
                 nama = mail.getText().toString();
                 password = pwd.getText().toString();
 
-                String email="acom";
-                String pass="123";
+                String email="admin@mail.com";
+                String pass="123456";
             if(nama.isEmpty()||password.isEmpty()){
                 textmail.setError("Email tidak boleh kosong");
                 textpass.setError("Password tidak boleh kosong");
